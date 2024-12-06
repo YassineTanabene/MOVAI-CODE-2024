@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: "Lobster", cursive, sans-serif; /* Police inspirée de l'océan */
+      background: linear-gradient(45deg, #00aaff, #80e0ff); /* Dégradé bleu océan */
+      text-align: center;
+      color: white; /* Couleur sobre et apaisante */
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+}
+#header {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 18px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: #094b65;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+}
+#header ul li a:hover,#header ul li a.active{
+    background: #094b65;
+    color: #fff;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#7fc1dc,transparent);
+    z-index: 10;
+}
+section #text{
+    position: absolute;
+    color: #094b65;
+    font-size: 8vw;
+    top: 9%;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    z-index: 1;
+}
+section #text span {
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+}
+.sec {
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(to bottom, #6fbad7, #010e14);
+}
+.sec p {
+
+    font-size: 3.5em;
+    
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1 ;
+
+}
+.sec title {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre pour le texte */
+    padding: 20px;
+  }
+  .title h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); /* Ombre douce pour le texte */
+    color: #ffffff;
+  }
+  .sec .sound-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond léger */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre discrète */
+  }
+  .sound-container h2 {
+    font-size: 2em;
+    color: #003366; /* Couleur douce pour le texte */
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 1.5em;
+    background: #0088cc; /* Couleur bleue douce */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Coins arrondis */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  button:hover {
+    background: #005f77; /* Changement de couleur au survol */
+    transform: scale(1.1);
+  }
+  #soundPlayer {
+    display: none;
+  }
+  .emotion-output {
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    color: #003366;
+    background-color: #cfe2f3; /* Fond apaisant */
+    border: 2px solid #003366; /* Bordure subtile */
+    border-radius: 5px;
+    text-align: center;
+  }
